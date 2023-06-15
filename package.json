@@ -1,0 +1,23 @@
+{
+  "name": "googlemaps-test-api",
+  "version": "1.0.0",
+  "description": "test google maps",
+  "main": "script.js",
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucianohorta/googlemaps-test-api.git"
+  },
+  "author": "Luciano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucianohorta/googlemaps-test-api/issues"
+  },
+  "homepage": "https://github.com/lucianohorta/googlemaps-test-api#readme"
+}
