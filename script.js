@@ -1,17 +1,3 @@
-// GOOGLE MAPS API
-function initMap() {
-
-    const mapCenter = { lat: -22.906, lng: -43.172 };
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
-        center: mapCenter,
-    });
-    const marker = new google.maps.Marker({
-        position: mapCenter ,
-        map: map,
-    });
-}
-
 $(document).ready(function(){
 
     // SLICK SLIDER:
@@ -71,10 +57,5 @@ $(document).ready(function(){
         $('html, body').animate({ scrollTop: 0 }, 'slow');
         return false;
     });
-
-    window.addEventListener('load', function() {
-        initMap();
-    });
-
 
 });

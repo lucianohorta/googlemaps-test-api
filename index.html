@@ -80,9 +80,28 @@
 
   <!-- SCRIPTS: -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-  <script src="https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/js?key=AIzaSyBzsXK0RA7jaF5QdlEhiWci4ec96Fv_YsM&callback=initMap" async defer></script>
   <script src="script.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzsXK0RA7jaF5QdlEhiWci4ec96Fv_YsM&callback=initMap" async defer></script>
+  <script>
+      // GOOGLE MAPS API
+      function initMap() {
+          const mapCenter = { lat: -22.906, lng: -43.172 };
+          const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 4,
+              center: mapCenter,
+          });
+          const marker = new google.maps.Marker({
+              position: mapCenter ,
+              map: map,
+          });
+      }
+      window.addEventListener('load', function() {
+        initMap();
+      });
+  </script>
 
 </body>
 </html>
