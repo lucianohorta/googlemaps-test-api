@@ -99,8 +99,12 @@
                 map: map,
             });
         }
-        initMap();
       });
+
+      // Call initMap when the Google Maps API is loaded
+      window.initMap = initMap;
+
+
   </script>
 
 </body>
