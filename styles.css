@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic&display=swap');
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button, [type="button"] {
+    background: none;
+}
+.main {
+    font-family:Arial;
+    width:100%;
+    display:block;
+    margin:0 auto;
+}
+
+button:hover, button:focus, [type="button"]:hover {
+    background: none;
+    border-color: none;
+}
+
+header {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.slider .slick-content {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.slider h1 {
+    font-size: 2em;
+}
+
+.slider h1, .slider h2 {
+    text-align: center;
+}
+
+.slick-list {
+    max-height: 300px;
+}
+
+.slick-item img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-height: 280px;
+}
+
+.slick-next, .slick-prev {
+    margin-top: -7px;
+}
+
+.slider-nav {
+    width: 95%;
+    margin:20px auto;
+}
+
+.slider-nav h3 {
+    margin: 10px;
+    background:hsl(216, 100%, 88%);
+}
+
+.slick-prev::before, .slick-next::before {
+    color:hsl(216, 100%, 88%);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+h3 {
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    position: relative;
+    text-align: center;
+}
+
+#highlights {
+    margin-top: 70px;
+}
+.highlight-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: #dcd9e4;
+}
+
+.card p {
+    margin: 20px;
+    text-align: center;
+    color: #3498db;
+}
+
+#contact-form {
+	margin: 50px auto;
+	display: flex;
+	justify-content: center;
+}
+
+#name, #email {
+	padding: 10px 20px;
+	border-radius: 6px;
+	border: none;
+	background: #ece8f7;
+	margin-right: 10px;
+}
+
+#name:focus, #email:focus {
+	background: #daf0ff;
+	outline: none;
+}
+
+button[type=submit] {
+	border: 0;
+	background: #c1e6ff;
+	color: #7d98ab;
+	border-radius: 6px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+#map {
+	height: 100%;
+	width: 800px;
+}
+
+#google-maps {
+	height: 100%;
+	background: red;
+	width: 800px;
+}
+
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+}
