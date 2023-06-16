@@ -190,6 +190,11 @@ button[type=submit] {
     justify-content: space-between;
     width: 30px;
     height: 21px;
+    transform: scale(0.78);
+}
+
+#header .hamburger.hamburger.nav-open {
+    transform: scale(0.6);
 }
 
 #header .hamburger span {
@@ -252,6 +257,10 @@ button[type=submit] {
         display: flex;
     }
 
+    .fixed-header .hamburger {
+        margin-right: 40px;
+    }
+
     #header nav {
         display: none;
     }
@@ -262,9 +271,13 @@ button[type=submit] {
         padding: 20px;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 42px;
         left: 0;
         z-index: 1;
+    }
+
+    .fixed-header nav ul {
+        top: 60px !important;
     }
 
     #header nav ul li {
