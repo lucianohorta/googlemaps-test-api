@@ -8,6 +8,8 @@ body {
 
 header {
     background: #50627c;
+    padding: 10px;
+    border-bottom: none;
 }
 
 .fixed-header {
@@ -34,10 +36,6 @@ button:hover, button:focus, [type="button"]:hover {
     border-color: none;
 }
 
-header {
-    padding: 10px;
-    border-bottom: none;
-}
 
 .slider .slick-content {
     width: 100%;
@@ -52,31 +50,6 @@ header {
 .slider-content h1, .slider-content h2 {
     text-align: center;
 }
-
-/* .slick-item img {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    max-height: 280px;
-}
-
-.slick-next, .slick-prev {
-    margin-top: -7px;
-} */
-
-/* .slider-nav {
-    width: 95%;
-    margin:20px auto;
-}
-
-.slider-nav h3 {
-    margin: 10px;
-    background:hsl(216, 100%, 88%);
-}
-
-.slick-prev::before, .slick-next::before {
-    color:hsl(216, 100%, 88%);
-} */
 
 .glide img {
     object-fit: cover;
@@ -203,7 +176,6 @@ button[type=submit] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
 #header .logo {
@@ -259,6 +231,18 @@ button[type=submit] {
     margin-left: 20px;
 }
 
+.fixed-header {
+    padding: 20px;
+}
+
+.fixed-header nav {
+    margin-right: 40px;
+}
+
+.glide__arrow--right, .glide__arrow--left {
+    background: #7fb5dfdb !important;
+}
+
 @media screen and (max-width: 768px) {
     #header .logo {
         font-size: 18px;
@@ -266,10 +250,6 @@ button[type=submit] {
 
     #header .hamburger {
         display: flex;
-    }
-
-    .fixed-header .hamburger {
-        margin-right: 40px;
     }
 
     #header nav {
